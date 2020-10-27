@@ -13,13 +13,18 @@ namespace Projetc2_IT_Dev.Controllers
 {
     public class AccountController : Controller
     {
-        
-        //Get: Account  
-        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+        //Get: Account  
+        [HttpGet]
+        public IActionResult Login(string returnUrl = "")
+        {
+            var model = new LoginViewModel { ReturnUrl = returnUrl };
+            return View(model);
+        }
+
 
         void connectionString()
         {
@@ -29,5 +34,27 @@ namespace Projetc2_IT_Dev.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult Edit()
+        {
+            return View();
+        }
+        public IActionResult Delete()
+        {
+            return View();
+        }
+        public IActionResult Details()
+        {
+            return View();
+        }
+        
     }
 }

@@ -17,12 +17,15 @@ namespace Projetc2_IT_Dev.Models
         public string MaritalStatus { get; set; }
 
         public string Gender { get; set; }
+        public string[] Genders = new[] { "Male", "Female" };
 
         public string BusinessTravel { get; set; }
 
         public string EducationField { get; set; }
 
 
+        ///register
+        
 
 
     }
