@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login Form</h1>
+<div class="Contact-Section">
+    <h1>Contact N Mokgosi</h1>
+    <div class="border"></div>
+    <form onsubmit="return false " class="C-form" method="post">
+        <input type="text" class="C-form-text" placeholder="Enter Your Name " id="Name">
+        <input type="password" class="C-form-text" placeholder="Enter Your Password " id="passwrd">
+        <input type="checkbox"  value="show password" onclick="myfun()"/>
+        <button type="submit" class="C-form-text-btn" onclick="sendContact()">Send </button>
+
+        <script>
+            function myfun() {
+                var n = document.getElementById("passwrd")
+                if (x.type === "password") {
+                    x.type = "text";
+                }
+                else {
+                    x.type = "password";
+                }
+            }
+
+        </script>
+
+        <input type="submit" value=" LOGIN" />
+
+    </form>
+
+    <footer>
+        <div class="wrap flex row">
+
+            Nthabiseng Mokgosi's Website
+        </div>
+
+
+    </footer>
+</div>
+
+
