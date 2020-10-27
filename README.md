@@ -1,4 +1,4 @@
-# Projetc2_IT_Dev
+# Projetc2_IT_Dev-27 October
 First commit 
 created a login view , Create View , Detele View , Edit/Update View , Details/read View and Register View with code .
 created a AccountController with has a class for Login and Verify.
